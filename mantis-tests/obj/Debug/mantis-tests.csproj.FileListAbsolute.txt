@@ -1,0 +1,17 @@
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\mantis-tests.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\mantis-tests.pdb
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\nunit.framework.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\WebDriver.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\WebDriver.Support.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\nunit.framework.xml
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\WebDriver.xml
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\WebDriver.Support.xml
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\obj\Debug\mantis-tests.csprojResolveAssemblyReference.cache
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\obj\Debug\mantis-tests.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\obj\Debug\mantis-tests.pdb
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\config_inc.php
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\OpaqueMail.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\System.Net.FtpClient.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\BouncyCastle.Crypto.pdb
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests\mantis-tests\bin\Debug\System.Net.FtpClient.xml
