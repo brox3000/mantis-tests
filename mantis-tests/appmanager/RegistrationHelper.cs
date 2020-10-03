@@ -19,9 +19,33 @@ namespace mantis_tests
             OpenRegistrationForm();
             FillRegistrationForm(account);
             SubmitRegistration();
+            // mail
             String url = GetConfirmationUrl(account);
             FillPasswordForm(url, account);
             SubmitPasswordForm();
+        }
+
+        public void OpenMainPage()
+        {
+            manager.Driver.Url = "http://localhost/mantisbt-2.24.2/login_page.php";
+        }
+
+        public void OpenRegistrationForm()
+        {
+            //driver.FindElement(By.ClassName("back-to-login-link pull-left")).Click();
+            driver.FindElement(By.LinkText("Signup for a new account")).Click();
+        }
+
+        public void FillRegistrationForm(AccountData account)
+        {
+            driver.FindElement(By.Name("username")).SendKeys(account.Name);
+            driver.FindElement(By.Name("email")).SendKeys(account.Email);
+        }
+
+        public void SubmitRegistration()
+        {
+            driver.FindElement(By.CssSelector("input.width-40.pull-right.btn.btn-success.btn-inverse.bigger-110")).Click();
+            //driver.FindElement(By.CssSelector("input.button")).Click();
         }
 
         private string GetConfirmationUrl(AccountData account)
@@ -42,30 +66,5 @@ namespace mantis_tests
         {
             driver.FindElement(By.CssSelector("input.button")).Click();
         }
-
-        public void OpenMainPage()
-        {
-            manager.Driver.Url = "http://localhost/mantisbt-2.24.2/login_page.php";
-        }
-
-        public void OpenRegistrationForm()
-        {
-            driver.FindElements(By.CssSelector("class.back-to-login-link pull-left"))[0].Click();
-        }
-
-        public void FillRegistrationForm(AccountData account)
-        {
-            driver.FindElement(By.Name("username")).SendKeys(account.Name);
-            driver.FindElement(By.Name("email")).SendKeys(account.Email);
-        }
-
-        public void SubmitRegistration()
-        {
-            driver.FindElement(By.CssSelector("input.button")).Click();
-        }
-
-
-
-
     }
 }

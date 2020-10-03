@@ -14,7 +14,10 @@ namespace mantis_tests
         public void setupXonfig()
         {
             app.Ftp.BackupFile("/config_inc.php");
-            using (Stream localFile = File.Open("/config_inc.php", FileMode.Open))
+
+            using (Stream localFile = File.Open(TestContext.CurrentContext.TestDirectory + "\\config_inc.php", FileMode.Open))
+            //using (Stream localFile = File.Open("/config_inc.php", FileMode.Open))
+
             {
                 app.Ftp.Upload("/config_inc.php", localFile);
             }
@@ -24,16 +27,16 @@ namespace mantis_tests
 
         public void TestAccountRegistration()
         {
-            AccountData account = new AccountData()
+            //Random rnd = new Random();
+            //int value = rnd.Next(0, 100);
+
+            AccountData account = new AccountData("user7", "password")
             {
-                Name = "testuser",
-                Password = "password",
-                Email = "testuser@localhost.localdomain"
+                Email = "user7@localhost.localdomainone"
             };
 
             app.James.Delete(account);
             app.James.Add(account);
-
             app.Registration.Register(account);
         }
 
