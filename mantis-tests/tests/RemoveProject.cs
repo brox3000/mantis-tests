@@ -29,8 +29,8 @@ namespace mantis_tests
             {
                 Random rnd = new Random();
                 int value = rnd.Next();
-http://localhost/mantisbt-2.24.2/my_view_page.php
-				//rojectData projectData = new ProjectData("first" + value, "descFirst");
+
+                 //rojectData projectData = new ProjectData("first" + value, "descFirst");
                 ProjectData project = new ProjectData("Kasin_add_delete_" + value, "The End Delete");
                 //app.prMH.Add(projectData);
 				app.prMH.CreateNewProjectFromAPI(account, project);													 
