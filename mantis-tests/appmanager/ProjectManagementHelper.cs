@@ -76,6 +76,28 @@ namespace mantis_tests
             driver.FindElement(By.CssSelector("button.btn.btn-primary.btn-white.btn-round")).Click();
             return this;
         }
+		
+		//10.0
+		public void CreateNewProjectFromAPI(AccountData account, ProjectData project)
+        {
+            Mantis.MantisConnectPortTypeClient client = new Mantis.MantisConnectPortTypeClient();
+            Mantis.ProjectData project_new = new Mantis.ProjectData();
+            project_new.name = project.Pjdata_name;
+            project_new.description = project.Pjdata_desc;
+            client.mc_project_add(account.Name, account.Password, project_new);
+        }
+        //
+
+       public List<Mantis.ProjectData> GetProjectsListFromApi(AccountData account)
+        {
+
+          Mantis.MantisConnectPortTypeClient client = new Mantis.MantisConnectPortTypeClient();
+
+        return  new List<Mantis.ProjectData> (client.mc_projects_get_user_accessible(account.Name, account.Password));
+
+
+
+        }
 
 
         private List<ProjectData> ProjectCach = null;

@@ -29,6 +29,11 @@ C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\b
 C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\bin\Debug\System.Net.FtpClient.xml
 C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\bin\Debug\WebDriver.xml
 C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\bin\Debug\WebDriver.Support.xml
-C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\obj\Debug\mantis-tests.csprojResolveAssemblyReference.cache
 C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\obj\Debug\mantis-tests.dll
 C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\obj\Debug\mantis-tests.pdb
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\bin\Debug\Moq.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\bin\Debug\RazorHosting.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\bin\Debug\SimpleBrowser.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\bin\Debug\SimpleBrowser.WebDriver.dll
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\bin\Debug\Moq.xml
+C:\Users\Lexa\Documents\Visual Studio 2015\Projects\mantis-tests_\mantis-tests\bin\Debug\mantis-tests.dll.config

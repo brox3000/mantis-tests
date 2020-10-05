@@ -9,7 +9,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Internal;
 using OpenQA.Selenium.Support.UI;
-
+using NUnit.Framework;
 
 
 namespace mantis_tests
@@ -24,10 +24,13 @@ namespace mantis_tests
         public FtpHelper Ftp { get; set; }
         public JamesHelper James { get; set; }
         public MailHelper Mail { get; set; }
+        public AdminHelper Admin { get; private set; }
+        public APIHelper API { get; set; }
 
         protected LoginHelper loginHelper;
         protected ManagementMenuHelper managementMenuHelper;
         protected ProjectManagementHelper projectManagementHelper;
+        protected APIHelper apiHelper;
 
 
 
@@ -37,17 +40,20 @@ namespace mantis_tests
         {
             driver = new FirefoxDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
-            baseURL = "http://localhost";
+            baseURL = "http://localhost/mantisbt-2.24.2";
 
             Registration = new RegistrationHelper(this);
             Ftp = new FtpHelper(this);
             James = new JamesHelper(this);
             Mail = new MailHelper(this);
+            Admin = new AdminHelper(this, baseURL);
+            API = new APIHelper(this);
 
             // 9.0
             loginHelper = new LoginHelper(this);
             managementMenuHelper = new ManagementMenuHelper(this);
             projectManagementHelper = new ProjectManagementHelper(this);
+            apiHelper = new APIHelper(this);
         }
 
         ~ApplicationManager()  // Диструктор // Stop Test
@@ -68,7 +74,7 @@ namespace mantis_tests
             if (!app.IsValueCreated)
             {
                 ApplicationManager newInstance = new ApplicationManager();
-                newInstance.driver.Url = "http://localhost/mantisbt-2.24.2/login_page.php";
+                newInstance.driver.Url = newInstance.baseURL + "/login_page.php";
                 app.Value = newInstance;
             }
             return app.Value;
@@ -95,5 +101,12 @@ namespace mantis_tests
             get { return projectManagementHelper; }
 
         }
+
+        public APIHelper apiH
+        {
+            get { return apiHelper; }
+
+        }
+
     }
 }

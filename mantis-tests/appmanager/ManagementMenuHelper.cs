@@ -18,7 +18,9 @@ namespace mantis_tests
 
         public void OpenFromMenu()
         {
-            manager.Driver.Url = "http://localhost/mantisbt-2.24.2/manage_proj_page.php";
+            //*10.0
+            //manager.Driver.Url = "http://localhost/mantisbt-2.24.2/manage_proj_page.php";
+            driver.FindElement(By.CssSelector("i.menu-icon.fa.fa-gears")).Click();
         }
 
         public void OpenProjectsMenu()
